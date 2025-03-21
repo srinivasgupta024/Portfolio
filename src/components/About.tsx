@@ -28,7 +28,7 @@ export default function About() {
             variants={fadeInUp}
           >
             <img
-              src="/srini.png"
+              src="srini.png"
               alt="Srinivas Gupta"
               className="w-full h-full object-cover rounded-2xl"
             />

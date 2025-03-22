@@ -9,7 +9,7 @@ export interface TimelineItem {
 export interface ProjectItem {
   title: string;
   description: string;
-  image: string;
+  image: any;
   tech: string[];
   github: string;
   live: string;

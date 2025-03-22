@@ -1,14 +1,18 @@
 import { ProjectItem } from "../types";
+import hirrdImage from "../images/hirrd.png";
+import schedulrrImage from "../images/schedulrr.png";
+import zcrumImage from "../images/zcrum.png";
+import reflctImage from "../images/reflct.png";
 
 export const projectsData: ProjectItem[] = [
   {
     title: "HealthConnect",
     description:
       "A healthcare data analytics platform for comparing negotiated rates and optimizing insurance choices.",
-    image: "hirrd.png",
+    image: hirrdImage,
     tech: ["Python", "SQL", "Azure", "PowerBi", "Data Analytics"],
-    github: "https://youtu.be/2XF-HgauItk?si=xnuz7_gpUVBBgdW6",
-    live: "https://youtu.be/2XF-HgauItk?si=xnuz7_gpUVBBgdW6",
+    github: "https://github.com/srinivasgupta024/Price-Transparency-Analysis",
+    live: "https://github.com/srinivasgupta024/Price-Transparency-Analysis",
     details: {
       problem:
         "Healthcare pricing transparency is often complex, and patients struggle to compare negotiated rates between different insurance companies.",
@@ -26,20 +30,20 @@ export const projectsData: ProjectItem[] = [
   {
     title: "FleetGuard",
     description: "A fleet risk analysis system leveraging AWS, HDFS, and predictive maintenance strategies for operational efficiency",
-    image: "schedulrr.png",
+    image: schedulrrImage,
     tech: ["AWS", "HDFS", "AWS QuickSight", "Athena", "Tableau", "AWS Glue",],
-    github: "https://youtu.be/glAC7d-TYSM?si=KW5Wrdeh5uVPpu7c",
-    live: "https://youtu.be/glAC7d-TYSM?si=KW5Wrdeh5uVPpu7c",
+    github: "https://github.com/srinivasgupta024/Fleet-Analysis-BigData-Project",
+    live: "https://github.com/srinivasgupta024/Fleet-Analysis-BigData-Project",
     details: {
       problem: "High risk of fleet incidents due to inefficient monitoring and lack of predictive maintenance",
       solution:
         "Implemented a fleet monitoring system with real-time risk identification and predictive maintenance strategies",
       features: [
         "Integration of HDFS with AWS QuickSight via JDBC drivers",
-      "Real-time high-risk driver identification",
-      "Processing and enrichment of 500GB+ geo-location data",
-      "Predictive maintenance using AWS Glue",
-      "Visualization and analysis through Tableau"
+        "Real-time high-risk driver identification",
+        "Processing and enrichment of 500GB+ geo-location data",
+        "Predictive maintenance using AWS Glue",
+        "Visualization and analysis through Tableau"
       ],
       impact: "Reduced fleet incidents by 30% and improved risk identification accuracy by 85%",
     },
@@ -47,43 +51,44 @@ export const projectsData: ProjectItem[] = [
   {
     title: "StreamFlow",
     description: "A scalable real-time data streaming pipeline using Kafka on AWS for efficient data ingestion, processing, and querying",
-    image: "zcrum.png",
+    image: zcrumImage,
     tech: ["Kafka", "AWS EC2", "AWS S3", "AWS Glue", "AWS Athena", "Jupyter Notebooks", "Python"],
-    github: "https://youtu.be/R5dBYINNouY?si=9x7lSDuqwJ0ojtIg",
-    live: "https://youtu.be/R5dBYINNouY?si=9x7lSDuqwJ0ojtIg",
+    github: "https://github.com/srinivasgupta024/Stock-Market-Analysis-kafka",
+    live: "https://github.com/srinivasgupta024/Stock-Market-Analysis-kafka",
     details: {
       problem: "Need for a scalable and reliable real-time data streaming pipeline for processing large datasets",
       solution:
         "Built a Kafka-based pipeline on AWS to stream, process, and query data in real time.",
       features: [
         "Kafka streaming for real-time data ingestion",
-      "EC2 deployment for Kafka brokers",
-      "Integration with AWS Glue for data cataloging",
-      "Data storage in AWS S3 for easy access and querying",
-      "SQL querying with Amazon Athena",
-      "Visualization and analysis in Jupyter notebooks"
+        "EC2 deployment for Kafka brokers",
+        "Integration with AWS Glue for data cataloging",
+        "Data storage in AWS S3 for easy access and querying",
+        "SQL querying with Amazon Athena",
+        "Visualization and analysis in Jupyter notebooks"
       ],
       impact: "Enabled real-time data processing and analysis, allowing for scalable and efficient data querying through AWS services",
     },
   },
   {
-    title: "Reflct",
-    description: "A minimalist journaling application",
-    image: "reflct.png",
-    tech: ["Next.js", "Tailwind CSS", "Supabase"],
-    github: "https://youtu.be/R5dBYINNouY?si=9x7lSDuqwJ0ojtIg",
-    live: "https://youtu.be/R5dBYINNouY?si=9x7lSDuqwJ0ojtIg",
+    title: "IPL Fever",
+    description: "An interactive data analytics project on IPL team performance using Databricks and Spark",
+    image: reflctImage,
+    tech: ["Apache Spark", "Databricks", "PySpark", "SQL", "Power BI"],
+    github: "https://github.com/srinivasgupta024/IPL-Data-Analysis-Spark-Project",
+    live: "https://github.com/srinivasgupta024/IPL-Data-Analysis-Spark-Project",
     details: {
-      problem: "Digital journaling apps are often cluttered and complex",
+      problem: "Cricket analysts and teams struggle to derive meaningful insights from large IPL datasets efficiently",
       solution:
-        "Created a clean, focused writing experience with powerful features",
+        "Implemented a scalable data pipeline using Apache Spark and Databricks to process IPL data and generate interactive visualizations",
       features: [
-        "Markdown support",
-        "Daily prompts",
-        "Mood tracking",
-        "Privacy-focused design",
+        "Optimized data processing with Spark",
+        "Toss-winning impact analysis",
+        "Team and player performance trends",
+        "Match result predictions",
+        "Interactive dashboards using Power BI",
       ],
-      impact: "Helping users maintain consistent journaling habits",
+      impact: "Enabled faster and more data-driven decision-making for IPL teams, analysts, and cricket enthusiasts",
     },
   },
 ];

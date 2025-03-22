@@ -1,5 +1,6 @@
 import { motion } from "framer-motion";
 import { fadeInUp, staggerContainer } from "../utils/animations";
+import sriniImage from "../images/srini.png";
 
 export default function About() {
   return (
@@ -23,12 +24,11 @@ export default function About() {
           viewport={{ once: true }}
         >
           <motion.div
-
             className="aspect-square rounded-2xl overflow-hidden"
             variants={fadeInUp}
           >
             <img
-              src="srini.png"
+              src={sriniImage}
               alt="Srinivas Gupta"
               className="w-full h-full object-cover rounded-2xl"
             />

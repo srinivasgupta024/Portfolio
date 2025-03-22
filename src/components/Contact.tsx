@@ -5,6 +5,11 @@ import { motion } from 'framer-motion';
 import toast, { Toaster } from 'react-hot-toast';
 import { fadeInUp, staggerContainer } from '../utils/animations';
 
+// Access environment variables
+const PUBLIC_KEY = import.meta.env.VITE_EMAILJS_PUBLIC_KEY;
+const TEMPLATE_ID = import.meta.env.VITE_EMAILJS_TEMPLATE_ID;
+const SERVICE_ID = import.meta.env.VITE_EMAILJS_SERVICE_ID;
+
 export default function Contact() {
   const formRef = useRef<HTMLFormElement>(null);
   const [isSubmitting, setIsSubmitting] = useState(false);
@@ -16,10 +21,10 @@ export default function Contact() {
     try {
       setIsSubmitting(true);
       await emailjs.sendForm(
-        import.meta.env.VITE_EMAILJS_SERVICE_ID,
-        import.meta.env.VITE_EMAILJS_TEMPLATE_ID,
+        SERVICE_ID,
+        TEMPLATE_ID,
         formRef.current,
-        import.meta.env.VITE_EMAILJS_PUBLIC_KEY
+        PUBLIC_KEY
       );
       toast.success('Message sent successfully!');
       formRef.current.reset();

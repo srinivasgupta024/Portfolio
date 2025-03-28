@@ -24,7 +24,7 @@ const skills = [
     skills: ['HDFS', 'Hadoop MapReduce','Spark', 'Sqoop', 'Hive', 'Impala', 'Flink', 'pig'],
   },
   {
-    category: 'Cloud Techologies',
+    category: 'Cloud Technologies',
     icon: Cloud,
     skills: ['Azure Data Factory', 'Databricks', 'Synapse Analytics', 'ADLS', 'Stream Analytics','Redshift','Glue','Athena','EC2','S3','Lambda'],
   },
